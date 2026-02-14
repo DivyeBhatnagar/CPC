@@ -97,3 +97,69 @@ if (contactForm) {
         contactForm.reset();
     });
 }
+
+// Typewriter Effect for Hero Section
+const typewriterElement = document.getElementById('typewriter');
+
+if (typewriterElement) {
+    const texts = [
+        'Building Industry-Ready Developers...',
+        'Initializing Coding Culture...',
+        'Loading Innovation...',
+        'CPC.launch()'
+    ];
+    
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typingSpeed = 100;
+    
+    function type() {
+        const currentText = texts[textIndex];
+        
+        if (!isDeleting && charIndex < currentText.length) {
+            typewriterElement.textContent = currentText.substring(0, charIndex + 1);
+            charIndex++;
+            typingSpeed = 100;
+        } else if (isDeleting && charIndex > 0) {
+            typewriterElement.textContent = currentText.substring(0, charIndex - 1);
+            charIndex--;
+            typingSpeed = 50;
+        } else {
+            if (!isDeleting) {
+                typingSpeed = 2000; // Pause at end
+                isDeleting = true;
+            } else {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length;
+                typingSpeed = 500; // Pause before starting new text
+            }
+        }
+        
+        setTimeout(type, typingSpeed);
+    }
+    
+    // Start typewriter effect after a short delay
+    setTimeout(type, 1000);
+}
+
+// Terminal Lines Animation
+const terminalLines = [
+    document.getElementById('terminal-line-1'),
+    document.getElementById('terminal-line-2'),
+    document.getElementById('terminal-line-3')
+];
+
+// Ensure terminal lines are visible with staggered animation
+if (terminalLines[0]) {
+    setTimeout(() => {
+        terminalLines.forEach((line, index) => {
+            if (line) {
+                setTimeout(() => {
+                    line.style.opacity = '1';
+                    line.style.transform = 'translateX(0)';
+                }, index * 500);
+            }
+        });
+    }, 2000);
+}

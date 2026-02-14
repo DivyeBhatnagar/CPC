@@ -52,18 +52,55 @@
 
     <!-- Hero Section -->
     <section class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 px-4 sm:px-6">
-        <!-- Subtle Blue Glow -->
-        <div class="hero-glow" style="top: 10%; left: 50%; transform: translateX(-50%);"></div>
-        <div class="absolute inset-0 bg-gradient-radial"></div>
+        <!-- Layer 1: Jet Black Base -->
+        <div class="absolute inset-0 bg-black"></div>
+        
+        <!-- Layer 2: Radial Glow Behind Illustration -->
+        <div class="absolute inset-0" style="background: radial-gradient(circle at 70% 40%, rgba(37,99,235,0.25), transparent 60%);"></div>
+        
+        <!-- Layer 3: Noise Texture -->
+        <div class="absolute inset-0 opacity-[0.03]" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=&quot;0 0 400 400&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cfilter id=&quot;noiseFilter&quot;%3E%3CfeTurbulence type=&quot;fractalNoise&quot; baseFrequency=&quot;0.9&quot; numOctaves=&quot;4&quot; stitchTiles=&quot;stitch&quot;/%3E%3C/filter%3E%3Crect width=&quot;100%25&quot; height=&quot;100%25&quot; filter=&quot;url(%23noiseFilter)&quot;/%3E%3C/svg%3E'); background-size: 200px 200px;"></div>
+        
+        <!-- Floating Tech Particles -->
+        <div class="floating-particles absolute inset-0 pointer-events-none">
+            <div class="particle particle-1" style="top: 20%; left: 15%;">&lt;/&gt;</div>
+            <div class="particle particle-2" style="top: 60%; left: 10%;">{ }</div>
+            <div class="particle particle-3" style="top: 30%; right: 20%;">( )</div>
+            <div class="particle particle-4" style="top: 70%; right: 15%;">[ ]</div>
+            <div class="particle-dot" style="top: 15%; right: 30%;"></div>
+            <div class="particle-dot" style="top: 80%; left: 25%;"></div>
+            <div class="particle-dot" style="top: 45%; left: 5%;"></div>
+        </div>
+        
+        <!-- Vertical Accent Line -->
+        <div class="absolute left-8 top-1/4 bottom-1/4 w-[1px] bg-gradient-to-b from-transparent via-[#2563EB] to-transparent opacity-40 hidden lg:block"></div>
         
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 md:gap-16 items-center relative z-10">
             <div class="reveal text-center md:text-left">
+                <!-- Glass Badge Pill -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-lg mb-6">
+                    <div class="w-2 h-2 rounded-full bg-[#2563EB] animate-pulse"></div>
+                    <span class="text-sm text-gray-300 font-medium">Official Technical Club • SCSE</span>
+                </div>
+                
                 <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mb-6 leading-[0.95] tracking-tight">
                     Core Programming<br/>
-                    <span class="bg-gradient-to-r from-[#2563EB] to-[#60A5FA] bg-clip-text text-transparent">Club</span>
+                    <span class="hero-club-text bg-gradient-to-r from-[#2563EB] via-[#3B82F6] to-[#60A5FA] bg-clip-text text-transparent">Club</span>
                 </h1>
-                <p class="text-base sm:text-lg text-gray-500 mb-3 font-medium tracking-wide uppercase">SCSE | IILM UNIVERSITY</p>
-                <p class="text-xl sm:text-2xl md:text-3xl mb-10 text-gray-300 font-light">Building Industry-Ready Developers 🚀</p>
+                
+                <!-- Animated Code Block Card -->
+                <div class="inline-block mb-8 p-4 rounded-xl bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 backdrop-blur-sm">
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500/60"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500/60"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500/60"></div>
+                    </div>
+                    <code class="text-sm text-[#60A5FA] font-mono">
+                        <span class="text-gray-500">$</span> <span id="typewriter"></span><span class="cursor-blink">|</span>
+                    </code>
+                </div>
+                
+                <p class="text-xl sm:text-2xl md:text-3xl mb-10 text-gray-300 font-light">Building Industry-Ready Developers</p>
                 
                 <div class="flex flex-col sm:flex-row flex-wrap gap-4 justify-center md:justify-start">
                     <a href="activities.html" class="btn-primary">Explore Activities</a>
@@ -72,59 +109,75 @@
             </div>
 
             <div class="reveal hidden md:block relative">
-                <div class="illustration-glow"></div>
-                <div class="floating relative z-10">
-                    <svg viewBox="0 0 600 600" class="w-full h-auto">
-                        <defs>
-                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#2563EB;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
-                            </linearGradient>
-                            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#60A5FA;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
-                            </linearGradient>
-                            <filter id="glow">
-                                <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-                                <feMerge>
-                                    <feMergeNode in="coloredBlur"/>
-                                    <feMergeNode in="SourceGraphic"/>
-                                </feMerge>
-                            </filter>
-                        </defs>
+                <!-- Glowing Terminal Window -->
+                <div class="terminal-window floating relative z-10 p-6 rounded-2xl bg-gradient-to-br from-[#0A0A0A] to-black border border-white/10 backdrop-blur-xl shadow-2xl">
+                    <!-- Terminal Header -->
+                    <div class="flex items-center gap-2 mb-6 pb-4 border-b border-white/5">
+                        <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                        <span class="ml-4 text-xs text-gray-500 font-mono">terminal — bash</span>
+                    </div>
+                    
+                    <!-- Terminal Content -->
+                    <div class="space-y-4 font-mono text-sm">
+                        <div class="flex items-start gap-2">
+                            <span class="text-[#60A5FA]">$</span>
+                            <div>
+                                <span class="text-gray-400">cd</span>
+                                <span class="text-white"> ~/core-programming-club</span>
+                            </div>
+                        </div>
                         
-                        <!-- 3D Laptop Base -->
-                        <rect x="150" y="320" width="300" height="200" rx="15" fill="#0A0A0A" stroke="url(#grad1)" stroke-width="2" filter="url(#glow)"/>
-                        <rect x="170" y="340" width="260" height="140" rx="8" fill="#000000"/>
+                        <div class="flex items-start gap-2">
+                            <span class="text-[#60A5FA]">$</span>
+                            <div>
+                                <span class="text-gray-400">npm run</span>
+                                <span class="text-white"> build-developers</span>
+                            </div>
+                        </div>
                         
-                        <!-- Screen with Code -->
-                        <rect x="180" y="350" width="240" height="120" rx="4" fill="url(#grad1)" opacity="0.2"/>
+                        <div class="pl-4 space-y-2 text-gray-500">
+                            <div class="flex items-center gap-2">
+                                <div class="w-1 h-1 rounded-full bg-green-500 animate-pulse"></div>
+                                <span id="terminal-line-1">Building Industry-Ready Developers...</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <div class="w-1 h-1 rounded-full bg-blue-500 animate-pulse"></div>
+                                <span id="terminal-line-2">Initializing Coding Culture...</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <div class="w-1 h-1 rounded-full bg-purple-500 animate-pulse"></div>
+                                <span id="terminal-line-3">Loading Innovation...</span>
+                            </div>
+                        </div>
                         
-                        <!-- Code Lines -->
-                        <line x1="200" y1="370" x2="280" y2="370" stroke="#60A5FA" stroke-width="3" opacity="0.8"/>
-                        <line x1="200" y1="390" x2="320" y2="390" stroke="#2563EB" stroke-width="3" opacity="0.8"/>
-                        <line x1="200" y1="410" x2="260" y2="410" stroke="#60A5FA" stroke-width="3" opacity="0.8"/>
-                        <line x1="200" y1="430" x2="340" y2="430" stroke="#2563EB" stroke-width="3" opacity="0.8"/>
-                        <line x1="200" y1="450" x2="300" y2="450" stroke="#60A5FA" stroke-width="3" opacity="0.8"/>
+                        <div class="flex items-start gap-2 text-green-400">
+                            <span class="text-[#60A5FA]">$</span>
+                            <div>
+                                <span>CPC.launch()</span>
+                                <span class="cursor-blink ml-1">█</span>
+                            </div>
+                        </div>
                         
-                        <!-- Floating Code Brackets -->
-                        <text x="100" y="200" font-size="80" fill="url(#grad2)" opacity="0.6" font-family="monospace" filter="url(#glow)">&lt;/&gt;</text>
-                        <text x="420" y="250" font-size="60" fill="url(#grad1)" opacity="0.5" font-family="monospace" filter="url(#glow)">{ }</text>
-                        
-                        <!-- Floating Particles -->
-                        <circle cx="120" cy="150" r="4" fill="#60A5FA" opacity="0.6">
-                            <animate attributeName="cy" values="150;130;150" dur="3s" repeatCount="indefinite"/>
-                        </circle>
-                        <circle cx="480" cy="180" r="6" fill="#2563EB" opacity="0.7">
-                            <animate attributeName="cy" values="180;160;180" dur="4s" repeatCount="indefinite"/>
-                        </circle>
-                        <circle cx="500" cy="400" r="5" fill="#60A5FA" opacity="0.5">
-                            <animate attributeName="cy" values="400;380;400" dur="3.5s" repeatCount="indefinite"/>
-                        </circle>
-                    </svg>
+                        <div class="pl-4 text-green-500">
+                            <span>✓ Success! Ready to innovate.</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Code Elements Around Terminal -->
+                    <div class="absolute -top-8 -left-8 text-4xl text-[#2563EB] opacity-40 font-mono floating-slow">&lt;/&gt;</div>
+                    <div class="absolute -bottom-6 -right-6 text-3xl text-[#60A5FA] opacity-40 font-mono floating-slow" style="animation-delay: 1s;">{ }</div>
+                    <div class="absolute top-1/2 -right-12 text-2xl text-[#3B82F6] opacity-30 font-mono floating-slow" style="animation-delay: 2s;">[ ]</div>
                 </div>
+                
+                <!-- Glow Effect Behind Terminal -->
+                <div class="absolute inset-0 bg-gradient-to-br from-[#2563EB]/20 to-[#1E40AF]/10 blur-3xl -z-10 rounded-full"></div>
             </div>
         </div>
+        
+        <!-- Smooth Fade Transition to Next Section -->
+        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-black pointer-events-none"></div>
     </section>
 
     <!-- Section Divider -->

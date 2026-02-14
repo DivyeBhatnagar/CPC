@@ -573,3 +573,209 @@ h1, h2, h3 {
         text-align: center;
     }
 }
+
+/* Hero Section Premium Enhancements */
+
+/* Floating Tech Particles */
+.floating-particles {
+    z-index: 1;
+}
+
+.particle {
+    position: absolute;
+    font-family: 'Courier New', monospace;
+    font-size: 2rem;
+    color: #2563EB;
+    opacity: 0.3;
+    animation: float-particle 8s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.particle-1 {
+    animation-delay: 0s;
+}
+
+.particle-2 {
+    animation-delay: 2s;
+}
+
+.particle-3 {
+    animation-delay: 1s;
+}
+
+.particle-4 {
+    animation-delay: 3s;
+}
+
+.particle-dot {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #60A5FA;
+    opacity: 0.4;
+    animation: float-particle 6s ease-in-out infinite;
+}
+
+@keyframes float-particle {
+    0%, 100% {
+        transform: translateY(0px) translateX(0px);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translateY(-20px) translateX(10px);
+        opacity: 0.6;
+    }
+}
+
+/* Hero Club Text with Glow */
+.hero-club-text {
+    text-shadow: 0 0 30px rgba(37, 99, 235, 0.4);
+    animation: subtle-glow 3s ease-in-out infinite;
+}
+
+@keyframes subtle-glow {
+    0%, 100% {
+        text-shadow: 0 0 30px rgba(37, 99, 235, 0.4);
+    }
+    50% {
+        text-shadow: 0 0 40px rgba(37, 99, 235, 0.6);
+    }
+}
+
+/* Cursor Blink Animation */
+.cursor-blink {
+    animation: blink 1s step-end infinite;
+    color: #60A5FA;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Terminal Window Styles */
+.terminal-window {
+    box-shadow: 
+        0 20px 60px rgba(0, 0, 0, 0.8),
+        0 0 40px rgba(37, 99, 235, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Floating Slow Animation for Code Elements */
+.floating-slow {
+    animation: floating-slow 6s ease-in-out infinite;
+}
+
+@keyframes floating-slow {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(5deg);
+    }
+}
+
+/* Enhanced Floating Animation */
+.floating {
+    animation: floating-enhanced 6s ease-in-out infinite;
+}
+
+@keyframes floating-enhanced {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+/* Typewriter Effect Container */
+#typewriter {
+    display: inline-block;
+    min-width: 200px;
+}
+
+/* Pulse Animation for Status Dots */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+}
+
+/* Glass Badge Pill Animation */
+.inline-flex.items-center.gap-2.px-4.py-2 {
+    transition: all 0.3s ease;
+}
+
+.inline-flex.items-center.gap-2.px-4.py-2:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(37, 99, 235, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Animated Code Block Card */
+.inline-block.mb-8.p-4 {
+    transition: all 0.4s ease;
+}
+
+.inline-block.mb-8.p-4:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+    border-color: rgba(37, 99, 235, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.2);
+}
+
+/* Terminal Line Fade In */
+#terminal-line-1,
+#terminal-line-2,
+#terminal-line-3 {
+    animation: fade-in 0.5s ease-in;
+}
+
+#terminal-line-2 {
+    animation-delay: 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+#terminal-line-3 {
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Adjustments for Hero */
+@media (max-width: 768px) {
+    .particle {
+        font-size: 1.5rem;
+    }
+    
+    .floating-particles {
+        display: none;
+    }
+    
+    .hero-club-text {
+        text-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
+    }
+}
