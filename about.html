@@ -81,26 +81,8 @@
 
                 <div class="reveal relative">
                     <div class="illustration-glow"></div>
-                    <div class="glass-panel p-12 rounded-3xl relative z-10">
-                        <svg viewBox="0 0 400 400" class="w-full h-auto">
-                            <defs>
-                                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#2563EB;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
-                                </linearGradient>
-                                <filter id="glow2">
-                                    <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-                                    <feMerge>
-                                        <feMergeNode in="coloredBlur"/>
-                                        <feMergeNode in="SourceGraphic"/>
-                                    </feMerge>
-                                </filter>
-                            </defs>
-                            <circle cx="200" cy="200" r="150" fill="url(#grad2)" opacity="0.15" filter="url(#glow2)"/>
-                            <circle cx="200" cy="200" r="100" fill="url(#grad2)" opacity="0.3" filter="url(#glow2)"/>
-                            <circle cx="200" cy="200" r="50" fill="url(#grad2)" opacity="0.6" filter="url(#glow2)"/>
-                            <rect x="150" y="150" width="100" height="100" rx="10" fill="#60A5FA" opacity="0.5" filter="url(#glow2)"/>
-                        </svg>
+                    <div class="glass-panel p-12 rounded-3xl relative z-10 flex items-center justify-center">
+                        <img src="Media/Logo_Fin.png" alt="Core Programming Club Logo" class="w-full h-auto max-w-md floating" style="filter: drop-shadow(0 0 40px rgba(37, 99, 235, 0.4));">
                     </div>
                 </div>
             </div>
