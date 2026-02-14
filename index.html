@@ -83,7 +83,7 @@
                     <span class="text-sm text-gray-300 font-medium">Official Coding Club • SCSE • IILM University</span>
                 </div>
                 
-                <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mb-6 leading-[0.95] tracking-tight">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-[0.95] tracking-tight">
                     Core Programming<br/>
                     <span class="hero-club-text bg-gradient-to-r from-[#2563EB] via-[#3B82F6] to-[#60A5FA] bg-clip-text text-transparent">Club</span>
                 </h1>
@@ -108,7 +108,17 @@
                 </div>
             </div>
 
-            <div class="reveal hidden md:block relative">
+            <div class="reveal relative mt-12 md:mt-0">
+                <!-- Partner Logos Above Terminal -->
+                <div class="flex justify-center gap-4 mb-6">
+                    <div class="partner-logo-card-hero">
+                        <img src="Media/iilm.png" alt="IILM University" class="partner-logo-img">
+                    </div>
+                    <div class="partner-logo-card-hero">
+                        <img src="Media/Logo_Fin.png" alt="Core Programming Club" class="partner-logo-img">
+                    </div>
+                </div>
+
                 <!-- Glowing Terminal Window -->
                 <div class="terminal-window floating relative z-10 p-6 rounded-2xl bg-gradient-to-br from-[#0A0A0A] to-black border border-white/10 backdrop-blur-xl shadow-2xl">
                     <!-- Terminal Header -->
@@ -180,19 +190,30 @@
         <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-black pointer-events-none"></div>
     </section>
 
-    <!-- Section Divider -->
-    <div class="section-divider"></div>
+    <!-- Glowing Section Divider -->
+    <div class="glow-divider my-20"></div>
 
-    <!-- What We Do Section -->
-    <section class="py-20 sm:py-32 px-4 sm:px-6 relative">
-        <div class="max-w-7xl mx-auto">
+    <!-- What We Do Section - PREMIUM IMMERSIVE -->
+    <section class="py-20 sm:py-32 px-4 sm:px-6 relative overflow-hidden">
+        <!-- Ambient Background Grid -->
+        <div class="ambient-grid"></div>
+        
+        <!-- Radial Glow Background -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-[800px] h-[800px] bg-[#2563EB]/8 rounded-full blur-[120px]"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
             <div class="text-center mb-16 sm:mb-20 reveal">
+                <!-- Floating Section Icon -->
+                <div class="section-icon-float mb-6">&lt;/&gt;</div>
+                
                 <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">What We Do</h2>
                 <p class="text-lg sm:text-xl text-gray-400 font-light">Empowering students through technology and innovation</p>
             </div>
 
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-16">
-                <div class="feature-card reveal">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-16 spotlight-container">
+                <div class="premium-glass-card reveal stagger-item">
                     <div class="icon-3d mb-6">
                         <svg viewBox="0 0 64 64" class="w-16 h-16">
                             <defs>
@@ -213,7 +234,7 @@
                     <p class="text-gray-400 leading-relaxed">Sharpen your problem-solving skills with competitive programming challenges</p>
                 </div>
 
-                <div class="feature-card reveal">
+                <div class="premium-glass-card reveal stagger-item">
                     <div class="icon-3d mb-6">
                         <svg viewBox="0 0 64 64" class="w-16 h-16">
                             <defs>
@@ -234,7 +255,7 @@
                     <p class="text-gray-400 leading-relaxed">Learn cutting-edge technologies from industry experts</p>
                 </div>
 
-                <div class="feature-card reveal">
+                <div class="premium-glass-card reveal stagger-item">
                     <div class="icon-3d mb-6">
                         <svg viewBox="0 0 64 64" class="w-16 h-16">
                             <defs>
@@ -254,7 +275,7 @@
                     <p class="text-gray-400 leading-relaxed">Build innovative solutions in intense 24-48 hour coding marathons</p>
                 </div>
 
-                <div class="feature-card reveal">
+                <div class="premium-glass-card reveal stagger-item">
                     <div class="icon-3d mb-6">
                         <svg viewBox="0 0 64 64" class="w-16 h-16">
                             <defs>
@@ -279,7 +300,7 @@
                     <p class="text-gray-400 leading-relaxed">Hands-on experience with real-world development projects</p>
                 </div>
 
-                <div class="feature-card reveal">
+                <div class="premium-glass-card reveal stagger-item">
                     <div class="icon-3d mb-6">
                         <svg viewBox="0 0 64 64" class="w-16 h-16">
                             <defs>
@@ -300,7 +321,7 @@
                     <p class="text-gray-400 leading-relaxed">Comprehensive training for technical interviews and assessments</p>
                 </div>
 
-                <div class="feature-card reveal">
+                <div class="premium-glass-card reveal stagger-item">
                     <div class="icon-3d mb-6">
                         <svg viewBox="0 0 64 64" class="w-16 h-16">
                             <defs>
@@ -443,201 +464,196 @@
         </div>
     </section>
 
-    <!-- Section Divider -->
-    <div class="section-divider"></div>
+    <!-- Glowing Section Divider -->
+    <div class="glow-divider my-20"></div>
 
-    <!-- What You'll Gain Section -->
-    <section class="py-28 px-4 sm:px-6 relative">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-20 reveal">
-                <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">What You'll Gain</h2>
-                <p class="text-lg sm:text-xl text-gray-400 font-light">More than just coding — real growth.</p>
-            </div>
+    <!-- CPC Culture Section - HUGE TYPOGRAPHY -->
+    <section class="culture-section relative overflow-hidden">
+        <!-- Animated Background -->
+        <div class="ambient-grid"></div>
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="animated-orb" style="top: 20%; left: 10%;"></div>
+            <div class="animated-orb" style="bottom: 20%; right: 10%; animation-delay: 2s;"></div>
+        </div>
 
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-                <div class="gain-card reveal">
-                    <div class="icon-3d mb-6">
-                        <svg viewBox="0 0 64 64" class="w-16 h-16">
-                            <defs>
-                                <linearGradient id="code-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#2563EB;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#60A5FA;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                            <rect x="8" y="12" width="48" height="40" rx="4" fill="url(#code-grad)" opacity="0.2"/>
-                            <rect x="12" y="16" width="40" height="32" rx="2" fill="#0A0A0A"/>
-                            <line x1="16" y1="24" x2="28" y2="24" stroke="#2563EB" stroke-width="2"/>
-                            <line x1="16" y1="30" x2="36" y2="30" stroke="#60A5FA" stroke-width="2"/>
-                            <line x1="16" y1="36" x2="32" y2="36" stroke="#2563EB" stroke-width="2"/>
-                            <circle cx="48" cy="24" r="2" fill="#60A5FA"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 tracking-tight">Real-world Coding Exposure</h3>
-                    <p class="text-gray-400 leading-relaxed font-light">Work on practical projects that mirror industry standards and challenges.</p>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+            <div class="text-center space-y-12 reveal">
+                <div>
+                    <p class="culture-subtitle mb-4">THE CPC WAY</p>
+                    <h2 class="culture-text">Execution over Theory</h2>
                 </div>
-
-                <div class="gain-card reveal">
-                    <div class="icon-3d mb-6">
-                        <svg viewBox="0 0 64 64" class="w-16 h-16">
-                            <defs>
-                                <linearGradient id="trophy-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#2563EB;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#60A5FA;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                            <path d="M20 16 L20 24 Q20 32 32 32 Q44 32 44 24 L44 16" fill="none" stroke="url(#trophy-grad)" stroke-width="3"/>
-                            <rect x="28" y="32" width="8" height="12" fill="url(#trophy-grad)" opacity="0.8"/>
-                            <rect x="22" y="44" width="20" height="4" rx="2" fill="url(#trophy-grad)"/>
-                            <circle cx="32" cy="24" r="6" fill="#2563EB" opacity="0.3"/>
-                            <path d="M32 22 L34 26 L30 26 Z" fill="#60A5FA"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 tracking-tight">Hackathon Readiness</h3>
-                    <p class="text-gray-400 leading-relaxed font-light">Build the skills and confidence to compete in national-level hackathons.</p>
+                <div>
+                    <h2 class="culture-text">Consistency over Motivation</h2>
                 </div>
-
-                <div class="gain-card reveal">
-                    <div class="icon-3d mb-6">
-                        <svg viewBox="0 0 64 64" class="w-16 h-16">
-                            <defs>
-                                <linearGradient id="brain-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#2563EB;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#60A5FA;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                            <circle cx="32" cy="28" r="16" fill="url(#brain-grad)" opacity="0.2"/>
-                            <path d="M24 20 Q28 16 32 20 Q36 16 40 20" stroke="#2563EB" stroke-width="2" fill="none"/>
-                            <path d="M24 28 Q28 24 32 28 Q36 24 40 28" stroke="#60A5FA" stroke-width="2" fill="none"/>
-                            <path d="M24 36 Q28 32 32 36 Q36 32 40 36" stroke="#2563EB" stroke-width="2" fill="none"/>
-                            <circle cx="26" cy="26" r="2" fill="#60A5FA"/>
-                            <circle cx="38" cy="26" r="2" fill="#60A5FA"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 tracking-tight">Strong Problem-solving Mindset</h3>
-                    <p class="text-gray-400 leading-relaxed font-light">Develop analytical thinking through competitive programming and challenges.</p>
+                <div>
+                    <h2 class="culture-text">Collaboration over Competition</h2>
                 </div>
-
-                <div class="gain-card reveal">
-                    <div class="icon-3d mb-6">
-                        <svg viewBox="0 0 64 64" class="w-16 h-16">
-                            <defs>
-                                <linearGradient id="rocket-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#2563EB;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#60A5FA;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                            <path d="M32 12 L28 32 L32 28 L36 32 Z" fill="url(#rocket-grad)" opacity="0.8"/>
-                            <circle cx="32" cy="20" r="4" fill="#60A5FA"/>
-                            <path d="M28 32 L24 44 L28 38" fill="#2563EB" opacity="0.6"/>
-                            <path d="M36 32 L40 44 L36 38" fill="#2563EB" opacity="0.6"/>
-                            <circle cx="28" cy="40" r="2" fill="#60A5FA" opacity="0.8">
-                                <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1.5s" repeatCount="indefinite"/>
-                            </circle>
-                            <circle cx="36" cy="40" r="2" fill="#60A5FA" opacity="0.8">
-                                <animate attributeName="opacity" values="0.3;0.8;0.3" dur="1.5s" repeatCount="indefinite"/>
-                            </circle>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 tracking-tight">Portfolio-worthy Projects</h3>
-                    <p class="text-gray-400 leading-relaxed font-light">Create impressive projects that stand out in interviews and applications.</p>
-                </div>
-
-                <div class="gain-card reveal">
-                    <div class="icon-3d mb-6">
-                        <svg viewBox="0 0 64 64" class="w-16 h-16">
-                            <defs>
-                                <linearGradient id="team-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#2563EB;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#60A5FA;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                            <circle cx="24" cy="24" r="6" fill="url(#team-grad)" opacity="0.6"/>
-                            <circle cx="40" cy="24" r="6" fill="url(#team-grad)" opacity="0.8"/>
-                            <circle cx="32" cy="36" r="6" fill="url(#team-grad)"/>
-                            <line x1="24" y1="24" x2="40" y2="24" stroke="#60A5FA" stroke-width="2" opacity="0.6"/>
-                            <line x1="24" y1="24" x2="32" y2="36" stroke="#60A5FA" stroke-width="2" opacity="0.6"/>
-                            <line x1="40" y1="24" x2="32" y2="36" stroke="#60A5FA" stroke-width="2" opacity="0.6"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 tracking-tight">Team Collaboration Experience</h3>
-                    <p class="text-gray-400 leading-relaxed font-light">Learn to work effectively in teams, just like in real tech companies.</p>
-                </div>
-
-                <div class="gain-card reveal">
-                    <div class="icon-3d mb-6">
-                        <svg viewBox="0 0 64 64" class="w-16 h-16">
-                            <defs>
-                                <linearGradient id="growth-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#2563EB;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#60A5FA;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                            <path d="M16 44 L24 36 L32 40 L40 28 L48 32" stroke="url(#growth-grad)" stroke-width="3" fill="none"/>
-                            <circle cx="24" cy="36" r="3" fill="#2563EB"/>
-                            <circle cx="32" cy="40" r="3" fill="#60A5FA"/>
-                            <circle cx="40" cy="28" r="3" fill="#2563EB"/>
-                            <path d="M44 28 L48 32 L44 32 Z" fill="#60A5FA"/>
-                            <rect x="14" y="46" width="36" height="2" fill="url(#growth-grad)" opacity="0.3"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 tracking-tight">Leadership & Execution Skills</h3>
-                    <p class="text-gray-400 leading-relaxed font-light">Take ownership of initiatives and develop management capabilities.</p>
+                <div class="mt-16">
+                    <p class="text-xl text-gray-500 font-light max-w-3xl mx-auto leading-relaxed">
+                        We don't just teach code. We build a culture of relentless builders, problem-solvers, and innovators who ship real products.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Divider -->
-    <div class="section-divider"></div>
+    <!-- Glowing Section Divider -->
+    <div class="glow-divider my-20"></div>
 
-    <!-- Collaboration & Opportunities Section -->
-    <section class="py-28 px-4 sm:px-6 relative">
-        <div class="max-w-7xl mx-auto">
+    <!-- What You'll Gain Section - ALTERNATING LAYOUT -->
+    <!-- What You'll Gain Section - ALTERNATING LAYOUT -->
+    <section class="py-28 px-4 sm:px-6 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="ambient-grid"></div>
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-[700px] h-[700px] bg-[#2563EB]/6 rounded-full blur-[120px]"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-20 reveal">
+                <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">What You'll Gain</h2>
+                <p class="text-lg sm:text-xl text-gray-400 font-light">More than just coding — real growth.</p>
+            </div>
+
+            <!-- Alternating Feature Showcase -->
+            <div class="feature-showcase">
+                <!-- Feature 1 - Left Text, Right Visual -->
+                <div class="feature-row reveal">
+                    <div class="feature-content">
+                        <h3>Real-world Coding Exposure</h3>
+                        <p>Work on practical projects that mirror industry standards and challenges. Build applications that solve real problems and gain hands-on experience with modern development workflows.</p>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="feature-visual-inner">
+                            <svg viewBox="0 0 200 200" class="w-48 h-48">
+                                <defs>
+                                    <linearGradient id="code-visual" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#2563EB;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#60A5FA;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <rect x="40" y="50" width="120" height="100" rx="8" fill="url(#code-visual)" opacity="0.3"/>
+                                <line x1="50" y1="70" x2="100" y2="70" stroke="#2563EB" stroke-width="3"/>
+                                <line x1="50" y1="85" x2="130" y2="85" stroke="#60A5FA" stroke-width="3"/>
+                                <line x1="50" y1="100" x2="110" y2="100" stroke="#2563EB" stroke-width="3"/>
+                                <circle cx="145" cy="70" r="3" fill="#60A5FA"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2 - Right Text, Left Visual -->
+                <div class="feature-row reverse reveal">
+                    <div class="feature-content">
+                        <h3>Hackathon Readiness</h3>
+                        <p>Build the skills and confidence to compete in national-level hackathons. Learn rapid prototyping, team collaboration, and how to pitch your ideas effectively.</p>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="feature-visual-inner">
+                            <svg viewBox="0 0 200 200" class="w-48 h-48">
+                                <defs>
+                                    <linearGradient id="trophy-visual" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#2563EB;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#60A5FA;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M70 70 L70 90 Q70 110 100 110 Q130 110 130 90 L130 70" fill="none" stroke="url(#trophy-visual)" stroke-width="6"/>
+                                <rect x="90" y="110" width="20" height="30" fill="url(#trophy-visual)" opacity="0.8"/>
+                                <rect x="75" y="140" width="50" height="10" rx="5" fill="url(#trophy-visual)"/>
+                                <circle cx="100" cy="90" r="15" fill="#2563EB" opacity="0.4"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3 - Left Text, Right Visual -->
+                <div class="feature-row reveal">
+                    <div class="feature-content">
+                        <h3>Problem-solving Mindset</h3>
+                        <p>Develop analytical thinking through competitive programming and challenges. Master data structures, algorithms, and learn to approach complex problems systematically.</p>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="feature-visual-inner">
+                            <svg viewBox="0 0 200 200" class="w-48 h-48">
+                                <defs>
+                                    <linearGradient id="brain-visual" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#2563EB;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#60A5FA;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="100" cy="100" r="40" fill="url(#brain-visual)" opacity="0.2"/>
+                                <path d="M70 85 Q85 70 100 85 Q115 70 130 85" stroke="#2563EB" stroke-width="4" fill="none"/>
+                                <path d="M70 100 Q85 85 100 100 Q115 85 130 100" stroke="#60A5FA" stroke-width="4" fill="none"/>
+                                <path d="M70 115 Q85 100 100 115 Q115 100 130 115" stroke="#2563EB" stroke-width="4" fill="none"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Glowing Section Divider -->
+    <!-- Glowing Section Divider -->
+    <div class="glow-divider my-20"></div>
+
+    <!-- Collaboration & Opportunities Section - GRAND FINISH -->
+    <section class="py-32 px-4 sm:px-6 relative overflow-hidden">
+        <!-- Animated Orb Background -->
+        <div class="animated-orb" style="top: 10%; right: 15%;"></div>
+        <div class="animated-orb" style="bottom: 15%; left: 10%; animation-delay: 3s;"></div>
+        
+        <!-- Ambient Grid -->
+        <div class="ambient-grid"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
             <div class="text-center mb-20 reveal">
                 <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">Collaboration & Opportunities</h2>
                 <p class="text-lg sm:text-xl text-gray-400 font-light">Open to innovation, partnerships, and community growth.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+            <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center mb-20">
                 <!-- Left Side - Text -->
                 <div class="reveal">
-                    <p class="text-lg text-gray-400 leading-relaxed mb-6 font-light">
+                    <p class="text-lg text-gray-400 leading-relaxed mb-8 font-light">
                         We believe in the power of collaboration. CPC actively seeks partnerships with industry leaders, tech companies, and educational institutions to create meaningful opportunities for our members.
                     </p>
-                    <ul class="space-y-4 mb-8">
-                        <li class="flex items-start gap-3">
-                            <div class="w-1.5 h-1.5 rounded-full bg-[#2563EB] mt-2"></div>
+                    <ul class="space-y-6 mb-10">
+                        <li class="flex items-start gap-4">
+                            <div class="w-2 h-2 rounded-full bg-[#2563EB] mt-2 flex-shrink-0"></div>
                             <div>
-                                <h4 class="font-semibold text-white mb-1">Industry Collaborations</h4>
-                                <p class="text-gray-400 text-sm font-light">Partner with us for tech talks, workshops, and recruitment drives.</p>
+                                <h4 class="font-bold text-white mb-2 text-lg">Industry Collaborations</h4>
+                                <p class="text-gray-400 font-light leading-relaxed">Partner with us for tech talks, workshops, and recruitment drives.</p>
                             </div>
                         </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-1.5 h-1.5 rounded-full bg-[#2563EB] mt-2"></div>
+                        <li class="flex items-start gap-4">
+                            <div class="w-2 h-2 rounded-full bg-[#2563EB] mt-2 flex-shrink-0"></div>
                             <div>
-                                <h4 class="font-semibold text-white mb-1">Guest Sessions</h4>
-                                <p class="text-gray-400 text-sm font-light">Share your expertise with aspiring developers through interactive sessions.</p>
+                                <h4 class="font-bold text-white mb-2 text-lg">Guest Sessions</h4>
+                                <p class="text-gray-400 font-light leading-relaxed">Share your expertise with aspiring developers through interactive sessions.</p>
                             </div>
                         </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-1.5 h-1.5 rounded-full bg-[#2563EB] mt-2"></div>
+                        <li class="flex items-start gap-4">
+                            <div class="w-2 h-2 rounded-full bg-[#2563EB] mt-2 flex-shrink-0"></div>
                             <div>
-                                <h4 class="font-semibold text-white mb-1">Hackathon Partnerships</h4>
-                                <p class="text-gray-400 text-sm font-light">Co-host hackathons and innovation challenges with us.</p>
+                                <h4 class="font-bold text-white mb-2 text-lg">Hackathon Partnerships</h4>
+                                <p class="text-gray-400 font-light leading-relaxed">Co-host hackathons and innovation challenges with us.</p>
                             </div>
                         </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-1.5 h-1.5 rounded-full bg-[#2563EB] mt-2"></div>
+                        <li class="flex items-start gap-4">
+                            <div class="w-2 h-2 rounded-full bg-[#2563EB] mt-2 flex-shrink-0"></div>
                             <div>
-                                <h4 class="font-semibold text-white mb-1">Inter-college Events</h4>
-                                <p class="text-gray-400 text-sm font-light">Join forces for larger technical events and competitions.</p>
+                                <h4 class="font-bold text-white mb-2 text-lg">Inter-college Events</h4>
+                                <p class="text-gray-400 font-light leading-relaxed">Join forces for larger technical events and competitions.</p>
                             </div>
                         </li>
                     </ul>
-                    <a href="contact.html" class="btn-primary inline-block">Partner With CPC</a>
+                    <a href="contact.html" class="premium-cta inline-block">
+                        <span>Partner With CPC</span>
+                    </a>
                 </div>
 
-                <!-- Right Side - Illustration -->
+                <!-- Right Side - Illustration with Orb -->
                 <div class="reveal relative">
                     <div class="illustration-glow"></div>
                     <div class="floating relative z-10">
@@ -678,6 +694,32 @@
                                 <animateTransform attributeName="transform" type="translate" values="0 0; 0 -10; 0 0" dur="3s" repeatCount="indefinite"/>
                             </rect>
                             <rect x="370" y="350" width="80" height="80" rx="12" fill="url(#collab-grad2)" opacity="0.6" filter="url(#collab-glow)">
+                                <animateTransform attributeName="transform" type="translate" values="0 0; 0 -15; 0 0" dur="4s" repeatCount="indefinite"/>
+                            </rect>
+                            
+                            <!-- Code Brackets -->
+                            <text x="180" y="140" font-size="60" fill="url(#collab-grad2)" opacity="0.5" font-family="monospace" filter="url(#collab-glow)">&lt;/&gt;</text>
+                            <text x="400" y="400" font-size="50" fill="url(#collab-grad1)" opacity="0.5" font-family="monospace" filter="url(#collab-glow)">{ }</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Partners Section -->
+            <div class="reveal text-center">
+                <div class="partner-logos">
+                    <div class="partner-logo-card">
+                        <img src="Media/iilm.png" alt="IILM University" class="partner-logo-img">
+                    </div>
+                    <div class="partner-logo-card">
+                        <img src="Media/Logo_Fin.png" alt="Core Programming Club" class="partner-logo-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Glowing Divider -->
                                 <animateTransform attributeName="transform" type="translate" values="0 0; 0 -15; 0 0" dur="4s" repeatCount="indefinite"/>
                             </rect>
                             

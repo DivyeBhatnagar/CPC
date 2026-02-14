@@ -163,3 +163,44 @@ if (terminalLines[0]) {
         });
     }, 2000);
 }
+
+
+// Stagger Animation on Scroll
+const staggerItems = document.querySelectorAll('.stagger-item');
+
+const staggerObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.animationPlayState = 'running';
+        }
+    });
+}, { threshold: 0.1 });
+
+staggerItems.forEach(item => {
+    item.style.animationPlayState = 'paused';
+    staggerObserver.observe(item);
+});
+
+// Spotlight Effect for Cards
+const spotlightContainer = document.querySelector('.spotlight-container');
+if (spotlightContainer) {
+    const cards = spotlightContainer.querySelectorAll('.premium-glass-card');
+    
+    cards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            cards.forEach(otherCard => {
+                if (otherCard !== card) {
+                    otherCard.style.opacity = '0.5';
+                    otherCard.style.transform = 'scale(0.98)';
+                }
+            });
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            cards.forEach(otherCard => {
+                otherCard.style.opacity = '1';
+                otherCard.style.transform = 'scale(1)';
+            });
+        });
+    });
+}
